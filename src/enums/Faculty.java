@@ -1,4 +1,4 @@
 package university.enums;
 public enum Faculty {
-    SITE, SEOGI, BUSINESS, SCIENCE
+    SITE, SEPI, BS, SG, ISE, KMA, SAM, SCE, SMSGT
 }
