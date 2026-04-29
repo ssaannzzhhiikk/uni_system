@@ -41,7 +41,7 @@ public class Student extends User implements Comparable<Student> {
 
     public void registerCourse(Course course) throws MaxCreditsException {
         if (totalCredits + course.getCredits() > MAX_CREDITS) {
-            throw new MaxCreditsException();
+            throw new MaxCreditsException(MAX_CREDITS);
         }
         registeredCourses.add(course);
         totalCredits += course.getCredits();

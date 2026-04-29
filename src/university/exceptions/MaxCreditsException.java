@@ -1,6 +1,6 @@
 package university.exceptions;
 public class MaxCreditsException extends Exception {
-    public MaxCreditsException() {
-        super("Student cannot exceed 35 credits.");
+    public MaxCreditsException(int maxCredits) {
+        super("Student cannot exceed " + maxCredits + " credits.");
     }
 }
